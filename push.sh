@@ -1,5 +1,5 @@
-until git push -u origin b1; do
-    echo "push branch b1 failded ,retry..."
+until git push -u origin cv; do
+    echo "push branch cv failded ,retry..."
     sleep 1
 done
 echo "push branch cv successfully"
