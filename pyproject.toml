@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "opencv start"
+version = "0.1.0"
+description = "try opencv"
+authors = ["henriFox.W <62045411+Henri-lab@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
