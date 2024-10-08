@@ -1,0 +1,13 @@
+# Overpass API 使用的查询语言称为 Overpass QL（Overpass Query Language），
+# 它是专门设计用于查询 OpenStreetMap (OSM) 数据的。
+# 虽然 Overpass API 的查询可以直接通过 URL 或 POST 请求执行，但它没有一种特定的独立文件格式。
+# 然而，通常 Overpass QL 查询语句会被保存在文本文件中，文件的扩展名可以是 .overpass 或者 .osmql，用于明确表示这是 Overpass QL 查询文件。
+[out:json];
+(node["amenity"="school"](50.6,7.0,50.8,7.3);
+way["highway"](50.6,7.0,50.8,7.3);
+relation["type"="boundary"](50.6,7.0,50.8,7.3);
+);
+out body;
+
+
+# curl -X POST https://overpass-api.de/api/interpreter --data-urlencode 'data=[out:json];(node["amenity"="school"](50.6,7.0,50.8,7.3);way["highway"](50.6,7.0,50.8,7.3);relation["type"="boundary"](50.6,7.0,50.8,7.3););out body;' > output.json
