@@ -1,13 +1,23 @@
 {
-    "cSpell.words": [
-        "henrifox",
-        "matplotlib",
-        "myenv",
-        "numpy",
-        "opencv",
-        "pyproject",
-        "pytest",
-        "scikit",
-        "tflow"
-    ]
+  "cSpell.words": [
+    "henrifox",
+    "matplotlib",
+    "myenv",
+    "numpy",
+    "opencv",
+    "pyproject",
+    "pytest",
+    "scikit",
+    "tflow"
+  ],
+  "code-runner.executorMap": {
+    "python": "cd $dir && conda activate myenv_opencv && python -u $filename",
+    // "python":"cd $dir && source ~/anaconda3/bin/activate myenv_opencv && python -u $filename"
+  },
+  "code-runner.executorMapByFileExtension": {
+    ".py": "cd $dir && conda activate myenv_opencv && python -u $filename"
+    // ".py":"cd $dir && source ~/anaconda3/bin/activate myenv_opencv && python -u $filename"
+  },
+  "code-runner.showExecutionMessage": true
+
 }
