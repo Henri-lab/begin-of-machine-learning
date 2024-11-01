@@ -9,5 +9,7 @@
         "pytest",
         "scikit",
         "tflow"
-    ]
+    ],
+    "python.analysis.autoSearchPaths": true,
+    "python.defaultInterpreterPath": "/opt/homebrew/anaconda3/envs/crawler/bin/python"
 }
