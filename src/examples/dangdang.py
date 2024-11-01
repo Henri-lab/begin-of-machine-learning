@@ -59,8 +59,7 @@ def save_to_json_file(filename="data/dangdang.json"):
     # Prepare data structure for JSON output
     data = {
         "author": "henrifox",
-        "source": "DangDang",
-        "url": "http://bang.dangdang.com/books/fivestars/01.00.00.00.00.00-recent30-0-0-1-",
+        "source": "http://bang.dangdang.com",
         "count": len(items),
         "time": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "list": items,
@@ -88,7 +87,7 @@ def main(page):
 if __name__ == "__main__":
     # Clear items list before starting to avoid duplicate data
     items.clear()
-    for i in range(1, 3):
+    for i in range(1, 26):
         main(i)
     # Save final JSON after all pages have been processed
     save_to_json_file()
